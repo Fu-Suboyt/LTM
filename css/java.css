@@ -1,0 +1,127 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f7fb, #ffffff); /* Nền gradient từ sáng đến trắng */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #6200ea; /* Màu tím đậm */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Article */
+article {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    font-size: 2rem;
+    color: #6200ea;
+    margin-bottom: 20px;
+}
+
+/* Các thẻ h2 và p */
+h2 {
+    font-size: 1.5rem;
+    color: #3f51b5;
+    margin-top: 30px;
+    border-bottom: 2px solid #6200ea;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Các danh sách */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Đoạn mã */
+pre {
+    background-color: #f4f7fb;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Video Container */
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    article h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,190 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec; /* Nền màu hồng nhạt */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #9c27b0; /* Màu tím đậm */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #fce4ec; /* Màu nền khi hover */
+}
+
+/* Wrapper Profile */
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    flex: 0 0 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 240px;
+    border-radius: 50%;
+    border: 4px solid #9c27b0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.profile-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #9c27b0;
+}
+
+.profile-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Section thông tin cá nhân */
+.about-me {
+    margin-top: 20px;
+}
+
+.about-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me li {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.about-me li strong {
+    color: #9c27b0;
+}
+
+.about-me a {
+    color: #9c27b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-me a:hover {
+    color: #fce4ec;
+}
+
+/* Wrapper chứa Sở thích và Kỹ năng */
+.skills-hobbies-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Sở thích */
+.hobbies {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hobbies h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #9c27b0;
+    margin-bottom: 10px;
+}
+
+.hobbies p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Kỹ năng */
+.skills {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.skills h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #9c27b0;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #9c27b0;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}

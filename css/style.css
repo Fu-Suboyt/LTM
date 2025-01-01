@@ -1,0 +1,144 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb; /* Nền trang sáng */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #6200ea; /* Màu tím đậm */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-right nav ul li {
+    margin-right: 20px;
+}
+
+.header-right nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header-right nav ul li a:hover {
+    color: #f4f7fb; /* Màu sáng khi hover */
+}
+
+/* Section danh mục bài viết */
+#java, #javascript {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#java h2, #javascript h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #6200ea;
+    margin-bottom: 20px;
+}
+
+/* Các bài viết */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6200ea;
+    margin: 10px 0;
+}
+
+.post a {
+    display: inline-block;
+    color: #6200ea;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post a:hover {
+    color: #3f51b5;
+}
+
+/* Footer */
+footer {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header-left h1 {
+        font-size: 24px;
+    }
+
+    .header-right nav ul li {
+        margin-right: 15px;
+    }
+
+    .header-right nav ul li a {
+        font-size: 16px;
+    }
+
+    .posts {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
